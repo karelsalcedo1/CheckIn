@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CheckIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheckInLogo" translatesAutoresizingMaskIntoConstraints="NO" id="XEX-G3-yUQ">
+                                <rect key="frame" x="97" y="245" width="180" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="2TH-Pe-Unx"/>
+                                    <constraint firstAttribute="width" constant="180" id="OV3-6k-Qpu"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="cRH-l5-7Gb">
+                                <rect key="frame" x="177" y="571" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89411764705882346" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cRH-l5-7Gb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4n6-5W-glU"/>
+                            <constraint firstItem="XEX-G3-yUQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iy2-cr-8zX"/>
+                            <constraint firstItem="XEX-G3-yUQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LEI-vU-h1T"/>
+                            <constraint firstItem="cRH-l5-7Gb" firstAttribute="top" secondItem="XEX-G3-yUQ" secondAttribute="bottom" constant="150" id="YxU-Bg-FcB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImgLogo" destination="XEX-G3-yUQ" id="W7Q-fQ-xBA"/>
+                        <outlet property="spinn" destination="cRH-l5-7Gb" id="5ZF-4v-fRB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="34"/>
+        </scene>
+        <!--Menu Principal-->
+        <scene sceneID="aIv-Pz-wDx">
+            <objects>
+                <viewController storyboardIdentifier="MenuPrincipal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xWj-Bx-H4T" customClass="MenuPrincipal" customModule="CheckIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7lq-VD-JgX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oOp-Cn-QoD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Quv-XA-fjU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Quv-XA-fjU" firstAttribute="top" secondItem="7lq-VD-JgX" secondAttribute="top" id="3pi-xY-bdA"/>
+                            <constraint firstItem="oOp-Cn-QoD" firstAttribute="leading" secondItem="Ox0-ZQ-5Ef" secondAttribute="leading" id="6iB-7R-fWF"/>
+                            <constraint firstItem="oOp-Cn-QoD" firstAttribute="top" secondItem="7lq-VD-JgX" secondAttribute="top" id="7gT-w7-xK3"/>
+                            <constraint firstItem="Quv-XA-fjU" firstAttribute="bottom" secondItem="Ox0-ZQ-5Ef" secondAttribute="bottom" id="ESR-p7-K9Z"/>
+                            <constraint firstItem="Quv-XA-fjU" firstAttribute="centerY" secondItem="7lq-VD-JgX" secondAttribute="centerY" id="GD0-S6-6og"/>
+                            <constraint firstItem="Quv-XA-fjU" firstAttribute="leading" secondItem="Ox0-ZQ-5Ef" secondAttribute="leading" id="JBh-gL-PDe"/>
+                            <constraint firstItem="oOp-Cn-QoD" firstAttribute="bottom" secondItem="Ox0-ZQ-5Ef" secondAttribute="bottom" id="Mep-gv-dLd"/>
+                            <constraint firstItem="Quv-XA-fjU" firstAttribute="centerX" secondItem="7lq-VD-JgX" secondAttribute="centerX" id="ahj-zu-62B"/>
+                            <constraint firstItem="oOp-Cn-QoD" firstAttribute="centerX" secondItem="7lq-VD-JgX" secondAttribute="centerX" id="bEr-jx-iuE"/>
+                            <constraint firstItem="Quv-XA-fjU" firstAttribute="trailing" secondItem="Ox0-ZQ-5Ef" secondAttribute="trailing" id="bFd-za-Leo"/>
+                            <constraint firstItem="oOp-Cn-QoD" firstAttribute="centerY" secondItem="7lq-VD-JgX" secondAttribute="centerY" id="nbe-H6-Ybb"/>
+                            <constraint firstItem="oOp-Cn-QoD" firstAttribute="trailing" secondItem="Ox0-ZQ-5Ef" secondAttribute="trailing" id="xIj-QZ-gvn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ox0-ZQ-5Ef"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImgBack" destination="oOp-Cn-QoD" id="Xaa-a1-KpS"/>
+                        <outlet property="ViewBack" destination="Quv-XA-fjU" id="0Oz-Kj-ao5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXn-kE-nUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829.60000000000002" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CheckInLogo" width="287" height="277"/>
+    </resources>
+</document>
