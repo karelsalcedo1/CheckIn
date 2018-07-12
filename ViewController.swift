@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         }, completion: { finished in
             let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "MenuPrincipal") as! MenuPrincipal
-            self.present(vc, animated: true, completion: nil)
+            self.present(vc, animated: false, completion: nil)
     })
     }
 
