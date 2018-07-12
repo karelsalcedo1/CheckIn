@@ -9,19 +9,18 @@
 import UIKit
 
 class Login: UIViewController {
-    @IBOutlet weak var BtnBack: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-    @IBAction func BtnBack(_ sender: Any) {
+    
+    @IBAction func BtnBackNew(_ sender: Any) {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "MenuPrincipal") as! MenuPrincipal
         self.present(vc, animated: true, completion: nil)
     }
+
+    
 
 }
