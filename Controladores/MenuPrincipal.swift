@@ -34,6 +34,10 @@ class MenuPrincipal: UIViewController {
     }
     @IBAction func btn1(_ sender: Any) {
         //Login with Facebook
+        let alertController = UIAlertController(title: "Error", message: "Esta función aún no esta disponible en esta versión, lo sentimos.", preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alertController.addAction(defaultAction)
+        self.present(alertController, animated: true, completion: nil)
     }
     @IBAction func btn2(_ sender: Any) {
         //Login with a User
@@ -42,7 +46,9 @@ class MenuPrincipal: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     @IBAction func btn3(_ sender: Any) {
-        //Registro for a User
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "registro") as! Registro
+        self.present(vc, animated: true, completion: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
